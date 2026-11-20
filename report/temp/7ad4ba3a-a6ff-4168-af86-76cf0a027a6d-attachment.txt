@@ -1,0 +1,30 @@
+[32mINFO    [0m common.recordlog:sendrequest.py:135 接口名称：用户登录
+[32mINFO    [0m common.recordlog:sendrequest.py:136 请求地址：http://127.0.0.1:8787/dar/user/login
+[32mINFO    [0m common.recordlog:sendrequest.py:137 请求方式：post
+[32mINFO    [0m common.recordlog:sendrequest.py:138 测试用例名称：用户名和密码正确登录验证
+[32mINFO    [0m common.recordlog:sendrequest.py:139 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+[32mINFO    [0m common.recordlog:sendrequest.py:140 Cookie：None
+[32mINFO    [0m common.recordlog:sendrequest.py:144 请求参数：{'data': {'user_name': 'test01', 'passwd': 'admin123'}}
+[32mINFO    [0m common.recordlog:sendrequest.py:107 cookie：{'Cookie': {'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NTA3NTMyMCwianRpIjoiOTc5YzBjZjEtMjczNC00NDQwLThiNjctNzJkNmU5MzZkODlkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc5NTA3NTMyMCwiZXhwIjoxNzk1MDc2MjIwfQ.FKhJmqz3zpArtBGtFYx54uMjVasqdqIcxQq4Z_pPeT4'}}
+[32mINFO    [0m common.recordlog:sendrequest.py:108 接口返回信息：{"error_code":null,"msg":"登录成功","msg_code":200,"orgId":"4140913758110176843","token":"4C6B6D89B3342a4aFdFCCfa3d3FE7","userId":"3666578044041308376"}
+
+[32mINFO    [0m common.recordlog:apiutil.py:154 提取接口的返回值：
+[32mINFO    [0m common.recordlog:assertions.py:175 yaml文件预期结果：[{'contains': {'error_code': 'none'}}, {'eq': {'msg': '登录成功'}}]
+[32mINFO    [0m common.recordlog:assertions.py:45 字符串包含断言成功：预期结果【None】,实际结果【[None]】
+[32mINFO    [0m common.recordlog:assertions.py:73 相等断言成功：接口实际结果：{'msg': '登录成功'}，等于预期结果：{'msg': '登录成功'}
+[32mINFO    [0m common.recordlog:assertions.py:203 测试成功
+[32mINFO    [0m common.recordlog:conftest.py:20 -------------接口测试开始--------------
+[32mINFO    [0m common.recordlog:sendrequest.py:135 接口名称：获取下单物料信息
+[32mINFO    [0m common.recordlog:sendrequest.py:136 请求地址：http://127.0.0.1:8787/api/order/customer/orderPlan/getMaterial
+[32mINFO    [0m common.recordlog:sendrequest.py:137 请求方式：GET
+[32mINFO    [0m common.recordlog:sendrequest.py:138 测试用例名称：正常获取下单物料信息
+[32mINFO    [0m common.recordlog:sendrequest.py:139 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+[32mINFO    [0m common.recordlog:sendrequest.py:140 Cookie：{'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NTA3NTMyMCwianRpIjoiOTc5YzBjZjEtMjczNC00NDQwLThiNjctNzJkNmU5MzZkODlkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc5NTA3NTMyMCwiZXhwIjoxNzk1MDc2MjIwfQ.FKhJmqz3zpArtBGtFYx54uMjVasqdqIcxQq4Z_pPeT4'}
+[32mINFO    [0m common.recordlog:sendrequest.py:108 接口返回信息：{"code":20000,"data":true,"material":["1676511586856882178","1676511586856882134","1676511524756882178","1676590766856882178","1676511586812182178"],"message":"操作成功"}
+
+[31m[1mERROR   [0m common.recordlog:apiutil.py:159 'bool' object is not subscriptable
+[32mINFO    [0m common.recordlog:apiutil.py:183 json提取到参数：{'materialId': ['1676511586856882178', '1676511586856882134', '1676511524756882178', '1676590766856882178', '1676511586812182178']}
+[32mINFO    [0m common.recordlog:assertions.py:175 yaml文件预期结果：[{'contains': {'message': '操作成功'}}]
+[32mINFO    [0m common.recordlog:assertions.py:45 字符串包含断言成功：预期结果【操作成功】,实际结果【操作成功】
+[32mINFO    [0m common.recordlog:assertions.py:203 测试成功
+[32mINFO    [0m common.recordlog:conftest.py:22 -------------接口测试结束--------------

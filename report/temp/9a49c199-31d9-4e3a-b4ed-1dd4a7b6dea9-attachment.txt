@@ -1,0 +1,15 @@
+[32mINFO    [0m common.recordlog:conftest.py:20 -------------接口测试开始--------------
+[32mINFO    [0m common.recordlog:sendrequest.py:135 接口名称：集团分配订单给物流公司
+[32mINFO    [0m common.recordlog:sendrequest.py:136 请求地址：http://127.0.0.1:8787/api/order/pc/order/assign
+[32mINFO    [0m common.recordlog:sendrequest.py:137 请求方式：POST
+[32mINFO    [0m common.recordlog:sendrequest.py:138 测试用例名称：正常集团分配订单给物流公司
+[32mINFO    [0m common.recordlog:sendrequest.py:139 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+[32mINFO    [0m common.recordlog:sendrequest.py:140 Cookie：{'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NTA3NTMyMCwianRpIjoiOTc5YzBjZjEtMjczNC00NDQwLThiNjctNzJkNmU5MzZkODlkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc5NTA3NTMyMCwiZXhwIjoxNzk1MDc2MjIwfQ.FKhJmqz3zpArtBGtFYx54uMjVasqdqIcxQq4Z_pPeT4'}
+[32mINFO    [0m common.recordlog:sendrequest.py:147 请求参数：{'json': {'orderId': 'DD20261119141904170', 'orgId': 'None'}}
+[32mINFO    [0m common.recordlog:sendrequest.py:108 接口返回信息：{"code":90000,"message":"订单id或组织id不存在"}
+
+[32mINFO    [0m common.recordlog:assertions.py:175 yaml文件预期结果：[{'contains': {'message': '操作成功'}}]
+[31m[1mERROR   [0m common.recordlog:assertions.py:50 响应文本断言失败：预期结果为【操作成功】,实际结果为【订单id或组织id不存在】
+[31m[1mERROR   [0m common.recordlog:assertions.py:206 测试失败
+[31m[1mERROR   [0m common.recordlog:apiutil.py:115
+[32mINFO    [0m common.recordlog:conftest.py:22 -------------接口测试结束--------------

@@ -1,0 +1,14 @@
+[32mINFO    [0m common.recordlog:conftest.py:20 -------------接口测试开始--------------
+[32mINFO    [0m common.recordlog:sendrequest.py:135 接口名称：接收订单
+[32mINFO    [0m common.recordlog:sendrequest.py:136 请求地址：http://127.0.0.1:8787/api/order/pc/order/master/receive
+[32mINFO    [0m common.recordlog:sendrequest.py:137 请求方式：POST
+[32mINFO    [0m common.recordlog:sendrequest.py:138 测试用例名称：正常接收订单
+[32mINFO    [0m common.recordlog:sendrequest.py:139 请求头：{'Content-Type': 'application/json;charset=UTF-8'}
+[32mINFO    [0m common.recordlog:sendrequest.py:140 Cookie：{'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5NTA3NTMyMCwianRpIjoiOTc5YzBjZjEtMjczNC00NDQwLThiNjctNzJkNmU5MzZkODlkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTc5NTA3NTMyMCwiZXhwIjoxNzk1MDc2MjIwfQ.FKhJmqz3zpArtBGtFYx54uMjVasqdqIcxQq4Z_pPeT4'}
+[32mINFO    [0m common.recordlog:sendrequest.py:147 请求参数：{'json': {'orderId': 'DD20261119141904170'}}
+[32mINFO    [0m common.recordlog:sendrequest.py:108 接口返回信息：{"code":20000,"data":true,"message":"操作成功"}
+
+[32mINFO    [0m common.recordlog:assertions.py:175 yaml文件预期结果：[{'contains': {'message': '操作成功'}}]
+[32mINFO    [0m common.recordlog:assertions.py:45 字符串包含断言成功：预期结果【操作成功】,实际结果【操作成功】
+[32mINFO    [0m common.recordlog:assertions.py:203 测试成功
+[32mINFO    [0m common.recordlog:conftest.py:22 -------------接口测试结束--------------

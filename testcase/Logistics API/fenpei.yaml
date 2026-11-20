@@ -1,0 +1,14 @@
+- baseInfo:
+    api_name: 集团分配订单给物流公司
+    url: /api/order/pc/order/assign
+    method: POST
+    header:
+      Content-Type: application/json;charset=UTF-8
+    cookies: ${get_extract_data(Cookie)}
+  testCase:
+    - case_name: 正常集团分配订单给物流公司
+      json:
+        orderId: ${get_extract_data(orderId)}
+        orgId: ${get_extract_data(orgId)}
+      validation:
+        - contains: { 'message': '操作成功' }
